@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets - Joel PALLARA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="projet-page">
+
+  <!-- Formes décoratives -->
+  <div class="shape shape-left"></div>
+  <div class="shape shape-right"></div>
+
+  <!-- Menu cliquable -->
+  <div class="top-right-menu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html">Compétences</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="projet.html" class="active">Projets</a></li>
+        <li><a href="contact.html">Me contacter</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="about-box">
+      <h2>Mes projets</h2>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="mini">Projet Professionnel</button>
+        <button class="tab-btn" data-tab="scolaire">Projets Scolaires</button>
+      </div>
+
+      <!-- Contenu des Tabs -->
+      <div class="tab-content active" id="mini">
+        <div class="project-column">
+          <div class="project-card">
+            <h3>Projet professionnel</h3>
+            <p>Projet professionnel de fin de BTS :</p>
+            <ul class="project-list">
+  <li>
+    <a href="Projets/Schema_GSB.png" target="_blank">
+      <img src="schéma-logo.png" alt="Schéma GSB" title="Schéma projet GSB">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/entreprise_gsb.pdf" target="_blank">
+      <img src="sujet-logo.png" alt="Sujet GSB" title="Sujet projet GSB">
+    </a>
+  </li>
+</ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="scolaire">
+
+        <!-- SECTION TP LOGICIELS -->
+        <div class="project-column">
+          <div class="project-card">
+            <h3>TP Logiciels</h3>
+            <p>Travaux pratiques en Bash, SQL et PowerShell :</p>
+           <ul class="project-list">
+  <li>
+    <a href="Projets/Base_de_donnée.pdf" target="_blank">
+      <img src="bdd_logo.png" alt="Base de données" title="Base de données">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/tp_bash.pdf" target="_blank">
+      <img src="bash_logo.png" alt="Bash" title="TP Bash">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/tp_SQL.pdf" target="_blank">
+      <img src="sql_logo.png" alt="SQL" title="TP SQL">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/Powershell_kohlanta.pdf" target="_blank">
+      <img src="logo_powershell.png" alt="PowerShell" title="PowerShell Kohlanta">
+    </a>
+  </li>
+</ul>
+          </div>
+        </div>
+      
+        <!-- SECTION TP RESEAU -->
+        <div class="project-column">
+          <div class="project-card">
+            <h3>TP Réseau</h3>
+            <p>Travaux pratiques de réseau réalisés en BTS SIO :</p>
+            <ul class="project-list">
+  <li>
+    <a href="Projets/Mini_projet.pdf" target="_blank">
+      <img src="mini.png" alt="Mini Projet" title="Rapport Mini Projet">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/tp_NAT_PAT.pdf" target="_blank">
+      <img src="NAT.png" alt="NAT & PAT" title="TP NAT & PAT">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/tp_VLANs_ACL.pdf" target="_blank">
+      <img src="vlans.png" alt="VLANs & ACL" title="TP VLANs & ACL">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/projet_GLPI.pdf" target="_blank">
+      <img src="GLPI.png" alt="GLPI" title="TP GLPI">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/tp_routage_dynamique.pdf" target="_blank">
+      <img src="OSPF.png" alt="OSPF" title="TP Routage OSPF">
+    </a>
+  </li>
+
+  <li>
+    <a href="Projets/tp_routage_statique.pdf" target="_blank">
+      <img src="RIP.png" alt="RIP" title="TP Routage RIP">
+    </a>
+  </li>
+</ul>
+          </div>
+        </div>
+      
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Joel PALLARA</p>
+  </footer>
+
+  <script>
+    // Tabs interactivités
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Mettre l'année courante dans le footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+
+

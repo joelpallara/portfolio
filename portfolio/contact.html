@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Me contacter - Joel PALLARA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="contact-page">
+  <!-- Formes décoratives -->
+  <div class="shape shape-left"></div>
+  <div class="shape shape-right"></div>
+
+  <!-- Menu cliquable en haut à droite -->
+  <div class="top-right-menu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html">Compétences</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="projet.html">Projets</a></li>
+        <li><a href="contact.html" class="active">Me contacter</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Bloc central avec formulaire -->
+    <div class="about-box">
+      <h2>Me contacter</h2>
+      <form action="https://formspree.io/f/xgvnarld" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="nom">Nom et prénom</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="_replyto" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Envoyer</button>
+      </form>
+
+      <!-- Logos GitHub et LinkedIn -->
+      <div class="social-contact">
+        <a href="https://github.com/joelpallara" target="_blank">
+          <img src="github.png" alt="GitHub" class="social-logo">
+        </a>
+        <a href="https://www.linkedin.com/in/joel-pallara" target="_blank">
+          <img src="linkedin.png" alt="LinkedIn" class="social-logo">
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Joel PALLARA</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

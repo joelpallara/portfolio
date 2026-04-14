@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compétences - Joel PALLARA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="competence-page">
+
+  <!-- Formes décoratives -->
+  <div class="shape shape-left"></div>
+  <div class="shape shape-right"></div>
+
+  <!-- Menu cliquable en haut à droite -->
+  <div class="top-right-menu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="cv.html" class="active">Compétences</a></li>
+        <li><a href="parcours.html">Parcours</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="projet.html">Projets</a></li>
+        <li><a href="contact.html">Me contacter</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="competences-wrapper">
+
+    <!-- 🌟 CONTENEUR PRINCIPAL AVEC ANIMATION -->
+    <div class="competence-main-container fadeInUp">
+
+      <!-- TITRE -->
+      <div class="competence-title-card fadeInUp" style="animation-delay: 0.1s;">
+          <h2>Mes Compétences</h2>
+      </div>
+
+      <!-- GRID 3 × 3 -->
+      <section class="skills-fixed-grid fadeInUp" style="animation-delay: 0.3s;">
+
+          <div class="skill-card">
+              <div class="skill-logo">🖥️</div>
+              <h3>Installation PC / Réseau</h3>
+          </div>
+
+          <div class="skill-card">
+              <div class="skill-logo">🛠️</div>
+              <h3>Dépannage PC / Réseau</h3>
+          </div>
+
+          <div class="skill-card">
+              <div class="skill-logo">📡</div>
+              <h3>Configuration routeurs & switchs</h3>
+          </div>
+
+          <div class="skill-card">
+              <div class="skill-logo">🧩</div>
+              <h3>VLANs</h3>
+          </div>
+
+          <div class="skill-card">
+              <div class="skill-logo">🗄️</div>
+              <h3>Serveurs DHCP / Web / DNS / AD</h3>
+          </div>
+
+          <div class="skill-card">
+              <div class="skill-logo">🌐</div>
+              <h3>Cisco Packet Tracer</h3>
+          </div>
+
+          <div class="skill-card">
+              <div class="skill-logo">💻</div>
+              <h3>Programmation (HTML / CSS / Python / Bash)</h3>
+          </div>
+
+          <div class="skill-card">
+              <div class="skill-logo">🗃️</div>
+              <h3>Bases de données (SQL)</h3>
+          </div>
+
+          <div class="skill-card">
+              <div class="skill-logo">📦</div>
+              <h3>Virtualisation (VirtualBox, Proxmox)</h3>
+          </div>
+
+      </section>
+
+      <!-- BLOC PDF + CV -->
+      <section class="bottom-buttons fadeInUp" style="animation-delay: 0.5s;">
+          <a href="documents/tableau_competences.pdf" class="pdf-btn" target="_blank">Tableau de compétences (PDF)</a>
+          <a href="CV_Joel_Pallara.pdf" class="cv-btn" target="_blank">Télécharger mon CV</a>
+      </section>
+
+    </div>
+    <!-- 🌟 CONTENEUR TERMINÉ -->
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Joel PALLARA</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1214,8 +1214,9 @@ body.competence-page .fadeInUp {
 
 /* ======= Footer spécifique à la page compétences (cv.html) ======= */
 body.competence-page footer {
-  position: static;       /* ⬅️ plus fixed */
-  margin-top: 90px;       /* espace au-dessus du footer */
+  position: fixed;
+  bottom: 0;
+  margin-top: 0;
 }
 
 /* ======= VEILLE - NOUVELLE STRUCTURE ======= */
